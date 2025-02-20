@@ -1,0 +1,38 @@
+/* GENERAL */
+html,body{
+    margin:0;
+}
+
+body{
+    background-image: url('./assets/fondo.jpg'); /*solo es uno random, para tener el codigo hecho*/
+    background-size: cover;
+}
+
+/* NAVBAR */
+nav{
+    padding: 1rem;
+    background-color: #128fcd;
+}
+
+.logoWeb{
+    width: 80px;
+    height: 80px;
+}
+
+/* MAIN */
+main{
+    align-items: center;
+    justify-items: center;
+    padding: 10%;
+}
+
+/* FOOTER */
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #128fcd;
+    text-align: center;
+  }
