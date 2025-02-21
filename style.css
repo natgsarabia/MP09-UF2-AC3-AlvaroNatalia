@@ -38,6 +38,7 @@ header[role=banner] {
 }
 
 #logo-main {
+  cursor: pointer;
   display: block;
   margin: 0 auto 10px;
 }
@@ -49,6 +50,7 @@ header[role=banner] {
 
 
 .webTitle {
+  cursor: pointer;
   background-color: rgba(106, 237, 237, 0.608);
   width: fit-content;
   padding: 1%;
@@ -56,7 +58,7 @@ header[role=banner] {
   margin-top: -80px;
   font-family: "Rubik Puddles";
   font-weight: bolder;
-  border-radius: 7%;
+  border-radius: 15px;
   color: aliceblue;
   font-size: 30px;
 }
@@ -83,17 +85,19 @@ header[role=banner] {
   font-size: 20px;
   background-color: rgba(106, 237, 237, 0.608);
   width: fit-content;
-  padding: 3%;
+  padding: 12px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bolder;
-  border-radius: 7%;
+  border-radius: 15px;
   color: aliceblue;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 #navbar-primary .navbar-nav .nav-link:hover {
-  color: rgb(10, 60, 186);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  background-color: rgba(55, 136, 136, 0.8);
 }
 
 /* MAIN */
@@ -103,29 +107,30 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  margin-bottom: 5%;
 }
 
-.descripcionEfecto{
+.descripcionEfecto {
   visibility: hidden;
   color: #fdfdfd;
   font-size: 15px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bolder;
   background-color: rgba(142, 11, 212, 0.637);
-  border: solid 3px rgb(13, 27, 185) ;
+  border: solid 5px rgb(13, 27, 185) ;
+  border-radius: 15px;
   width: fit-content;
   padding: 1%;
   margin:auto;
   text-align: center;
 }
 
-.efecto-titulo{
+.efecto-titulo {
   color:rgb(106, 237, 237,); 
   font-size: 20px;
   font-weight: bolder;
 }
-.containerMain{
+.containerMain {
   margin-top: 10px;
   display:flex;
   flex-direction: row;
@@ -138,15 +143,22 @@ main {
 .video-container {
   text-align: center;
   margin: 0 auto;
+  background-color: rgba(56, 139, 70, 0.5);
+  padding: 1.5%;
+  border-radius: 15px;
 }
 
-.descripcionVideo{
+video {
+  border-radius: 15px;
+}
+
+.descripcionVideo {
   color: #333;
   font-size: 20px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bolder;
   background-color: rgba(106, 237, 237, 0.608);
-  border-radius: 5%;
+  border-radius: 15px;
   width: 600px;
   padding: 3%;
   text-align: center;
@@ -155,7 +167,7 @@ main {
 
 /* FOOTER */
 footer {
-  background-color: #128fcd;
+  background-color: #128fcd9d;
   color: white;
   text-align: center;
   padding: 1rem;

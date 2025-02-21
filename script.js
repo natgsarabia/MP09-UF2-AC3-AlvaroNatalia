@@ -1,6 +1,8 @@
 const video = document.querySelector("video");
 
 const title = document.querySelector('.webTitle');
+const logo = document.getElementById("logo-main");
+
 const horizontal = document.getElementById("horizontal");
 const circle = document.getElementById("circle");
 const slide = document.getElementById("slide");
@@ -20,6 +22,18 @@ title.addEventListener("click", () => {
     efectoTitulo.innerHTML="";
     efectoDescripcion.innerHTML="";
 });
+
+logo.addEventListener("click", () => {
+    //eliminar descripcion
+    let descripcionEfecto = document.querySelector('.descripcionEfecto');
+    let efectoTitulo = document.querySelector('.efecto-titulo');
+    let efectoDescripcion = document.querySelector('.efecto-descripcion');
+    
+    descripcionEfecto.style.visibility="hidden";
+    efectoTitulo.innerHTML="";
+    efectoDescripcion.innerHTML="";
+});
+
 
 horizontal.addEventListener("click", () => {
     video.pause();
