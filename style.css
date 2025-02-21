@@ -30,6 +30,7 @@ body {
 
 /* NAVBAR */
 header[role=banner] {
+  width: 100%;
   text-align: center;
   padding: 20px 0;
 }
@@ -57,6 +58,9 @@ header[role=banner] {
 }
 
 /* NAVBAR */
+.banner{
+  width: 100%;
+}
 #navbar-primary .navbar-nav {
   width: 100%;
   text-align: center;
@@ -95,8 +99,38 @@ main {
   padding: 20px;
 }
 
+.descripcionEfecto{
+  visibility: hidden;
+  color: #fdfdfd;
+  font-size: 15px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  background-color: rgba(185, 125, 13, 0.608);
+  border: solid 6px rgb(13, 27, 185) ;
+  width: fit-content;
+  padding: 1%;
+}
+
+.container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .video-container {
   text-align: center;
+  margin-right: 5%;
+}
+
+.descripcionVideo{
+  color: #333;
+  font-size: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  background-color: rgba(106, 237, 237, 0.608);
+  border-radius: 5%;
+  width: fit-content;
+  padding: 3%;
 }
 
 /* FOOTER */
@@ -106,7 +140,7 @@ footer {
   text-align: center;
   padding: 1rem;
   width: 100%;
-  bottom: 0;
+ 
 }
 
 footer a{
