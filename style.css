@@ -41,15 +41,17 @@ header[role=banner] {
   display: block;
   margin: 0 auto 10px;
 }
+
 .logoweb{
   align-items: center;
   justify-content: center;
 }
 
+
 .webTitle {
   background-color: rgba(106, 237, 237, 0.608);
   width: fit-content;
-  padding: 3%;
+  padding: 1%;
   margin:auto;
   margin-top: -80px;
   font-family: "Rubik Puddles";
@@ -110,8 +112,8 @@ main {
   font-size: 15px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bolder;
-  background-color: rgba(185, 125, 13, 0.608);
-  border: solid 6px rgb(13, 27, 185) ;
+  background-color: rgba(142, 11, 212, 0.637);
+  border: solid 3px rgb(13, 27, 185) ;
   width: fit-content;
   padding: 1%;
   margin:auto;
@@ -119,17 +121,16 @@ main {
 }
 
 .efecto-titulo{
-  color:rgb(13, 27, 185); 
+  color:rgb(106, 237, 237,); 
   font-size: 20px;
   font-weight: bolder;
 }
-.container{
-  margin-top: 15px;
+.containerMain{
+  margin-top: 10px;
   display:flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -146,7 +147,7 @@ main {
   font-weight: bolder;
   background-color: rgba(106, 237, 237, 0.608);
   border-radius: 5%;
-  width: 400px;
+  width: 600px;
   padding: 3%;
   text-align: center;
   margin: 0 auto;
