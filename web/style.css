@@ -1,38 +1,78 @@
 /* GENERAL */
 html,body{
-    margin:0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('./assets/fondo.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
 body{
     background-image: url('./assets/fondo.jpg'); /*solo es uno random, para tener el codigo hecho*/
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 /* NAVBAR */
-nav{
-    padding: 1rem;
-    background-color: #128fcd;
+header[role="banner"] {
+    text-align: center;
+    padding: 20px 0;
 }
 
-.logoWeb{
-    width: 80px;
-    height: 80px;
+#logo-main {
+    display: block;
+    margin: 0 auto 10px;
 }
+
+/* NAVBAR */
+#navbar-primary .navbar-nav {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+#navbar-primary .navbar-nav .nav-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#navbar-primary .navbar-nav .nav-link {
+    color: #333;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#navbar-primary .navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
 
 /* MAIN */
 main{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
-    padding: 10%;
+    min-height: 60vh;
+    padding: 20px;
+}
+
+.video-container {
+    text-align: center;
 }
 
 /* FOOTER */
 footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
     background-color: #128fcd;
+    color: white;
     text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
   }
