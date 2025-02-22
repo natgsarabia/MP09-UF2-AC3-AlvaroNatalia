@@ -1,4 +1,5 @@
 const video = document.querySelector("video");
+const audio = document.querySelector("audio");
 
 const title = document.querySelector('.webTitle');
 const logo = document.getElementById("logo-main");
@@ -28,6 +29,8 @@ logo.addEventListener("click", () => {
     let descripcionEfecto = document.querySelector('.descripcionEfecto');
     let efectoTitulo = document.querySelector('.efecto-titulo');
     let efectoDescripcion = document.querySelector('.efecto-descripcion');
+
+    audio.play();
     
     descripcionEfecto.style.visibility="hidden";
     efectoTitulo.innerHTML="";
